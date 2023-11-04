@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoginPage</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    
+    <div id="main">
+        <div class="form_container">
+            <form method="post" action="http://192.168.1.10/index.php">
+                <label for="text">E-Mail Address</label> <br>
+                <input type="text" name="uname" placeholder="username" id="textbox"><br>
+                <label for="text">Password</label> <br>
+                <input type="password" name="pass" placeholder="password" id="textbox"><br>
+                <input type="checkbox">
+                <label for="checkbox">Remember me</label>
+                <a href="#forgetpasword?">Forget password?</a><br>
+                <button>submit</button><br>
+                <label for="href">Don't have an account yet? </label><a href="#signup">Sign Up</a>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
