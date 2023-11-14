@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LoginPage</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/index.css" />
+    <script src="/src/script/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Rubik:wght@450&display=swap"rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules\bootstrap-icons\font\bootstrap-icons.css" />
 </head>
+
 <body>
     <div id="main">
         <div class="form_container">
-            <form method="post" action="http://192.168.1.10/index.php">
-                <label for="text">E-Mail Address</label> <br>
-                <input type="text" name="uname" placeholder="username" id="textbox"><br>
-                <label for="text">Password</label> <br>
-                <input type="password" name="pass" placeholder="password" id="textbox"><br>
-                <input type="checkbox" id="checkbox">
-                <label for="checkbox">Remember me</label>
-                <a id="forgettext" href="#forgetpasword?">Forget password?</a><br>
-                <div  class="button">
-                    <button id="sign_bt">Sign In</button><br>
+            <form method="get" action="/logged_in.html">
+                <label>E-mail Address
+                <input id="textbox" type="text" name="uname" placeholder=" email@gmail.com" onfocus="textFocus(this)" onfocusout="textOutFocus(this)"  required /></label><br />
+                <label>Password
+                <input id="passbox" type="password" name="pass" placeholder=" . . . . . . . ." onfocus="textFocus(this)" onfocusout="textOutFocus(this)" required /></label><br />
+                <i id="see_pass" class="bi-eye-slash" onclick="changeIcon(this)"></i>
+                <div>
+                    <label for="check">
+                    <input type="checkbox" id="check" />
+                    Remember me</label>
+                    <a id="forgettext" href="#forgetpasword?">Forget password?</a><br />
                 </div>
+                <div class="signinbtn"><button>Sign In</button><br /></div>
                 <div class="dontsignup">
-                    <label id="forgettext">Don't have an account yet?&nbsp;</label>
-                    <a id="signuptext">Sign Up</a>
+                    <label id="forgettext">Don't have an account yet?
+                    <a id="signuptext" href="#sign_up">Sign Up</a></label>
                 </div>
             </form>
         </div>
