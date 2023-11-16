@@ -1,11 +1,14 @@
-*{
+:root {
   --backgorund-color: #e9edf3;
   --primary-color: #ffffff;
   --secondary-color: #ffffff;
   --button-color: #2563eb;
-  -webkit-user-select: auto;
-  -ms-user-select: auto;
-  user-select: auto;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+* {
   overflow: hidden;
 }
 
@@ -16,12 +19,17 @@ body {
   margin: 0px;
 }
 
-.form_container:not(:only-child){
+form > * {
+  margin: 4px 2px 6px 2px;
+}
+
+form div,
+.btm_container {
   text-align: center;
 }
 
-.form_container *:not(:only-child,#see_pass,.see_pass_container,.btm_container){
-  margin: 4px 2px 6px 2px;
+.btm_container > * {
+  margin: 10px 2px;
 }
 
 ::placeholder {
@@ -49,15 +57,13 @@ body {
   border-radius: 4px;
   width: 95%;
   height: 35px;
-  /* padding: 0%; */
 }
 
-.see_pass_container{
+.see_pass_container {
   position: relative;
-  /* background-color: #2563eb; */
 }
 
-#see_pass{
+#see_pass {
   position: absolute;
   right: 3%;
   top: 40%;
@@ -81,9 +87,9 @@ body {
   color: #a9abaf;
 }
 
-.btm_container{
+.btm_container {
   width: 100%;
-  text-align:center;
+  margin: 4px 0px;
 }
 
 .signinbtn {
