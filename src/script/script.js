@@ -1,6 +1,6 @@
 var ph
 function changeIcon(icon) {
-    icon.classList.toggle('bi-eye')
+    icon.classList.toggle("bi-eye")
     if (document.getElementById("passbox").type=="text"){
         document.getElementById("passbox").type="password"
     }
@@ -16,5 +16,4 @@ let textOutFocus = function(element){
     if(element.value==""){
         element.placeholder= ph
     }
-
 }

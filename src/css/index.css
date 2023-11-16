@@ -3,9 +3,9 @@
   --primary-color: #ffffff;
   --secondary-color: #ffffff;
   --button-color: #2563eb;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  -webkit-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
   overflow: hidden;
 }
 
@@ -21,17 +21,13 @@ body {
 }
 */
 
-form  *{
-  /* margin: 8px 4px; */
-}
-
 ::placeholder {
   font-family: "Rubik", sans-serif;
 }
 
-.center{
+/* .center{
   text-align: center;
-}
+} */
 
 .form_container {
   background-color: var(--primary-color);
@@ -43,12 +39,11 @@ form  *{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow: hidden;
 }
 
-.float_left *:not(#check){
+/* .float_left *:not(#check){
 
-}
+} */
 
 form{
   text-align: center;
