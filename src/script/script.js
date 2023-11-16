@@ -1,5 +1,4 @@
 var ph
-var pt
 
 function changeIcon(icon) {
     icon.classList.toggle("bi-eye")
@@ -9,8 +8,6 @@ function changeIcon(icon) {
     else{
         document.getElementById("pass_box").type="text"
     }
-    pt = document.getElementById("pass_box").type
-    console.log(pt)
 }
 
 function textFocus(element){
