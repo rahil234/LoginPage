@@ -1,4 +1,4 @@
-:root {
+*{
   --backgorund-color: #e9edf3;
   --primary-color: #ffffff;
   --secondary-color: #ffffff;
@@ -6,8 +6,6 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 0;
-  margin: 0;
   overflow: hidden;
 }
 
@@ -15,35 +13,44 @@ body {
   background-color: var(--backgorund-color);
   font-family: "Rubik", sans-serif;
   font-size: small;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  height: 100%;
-  width: 100%;
-  transform: translate(-25%, -25%);
+  margin: 0px;
 }
 
-/* div.form_container *:not(.passcontainer,.see_pass_container) {
-  margin: 8px 4px;
-} */
+/* div.form_container >*{
+  margin: 8px 4px; 
+}
+*/
 
-/* .form_container.{
-  margin: 8px 4px;
-} */
+form  *{
+  /* margin: 8px 4px; */
+}
 
 ::placeholder {
   font-family: "Rubik", sans-serif;
+}
+
+.center{
+  text-align: center;
 }
 
 .form_container {
   background-color: var(--primary-color);
   border-radius: 10px;
   padding: 30px 20px;
-  width: 50%;
-  height: 30%;
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
-.center {
+.float_left *:not(#check){
+
+}
+
+form{
   text-align: center;
 }
 
@@ -52,7 +59,7 @@ body {
   border-style: solid;
   border-color: #e3e6e9;
   border-radius: 4px;
-  width: 98%;
+  width: 95%;
   height: 35px;
 }
 
@@ -92,6 +99,7 @@ body {
   height: 33px;
   width: 95%;
   border-radius: 4px;
+  /* margin-top: 50px; */
 }
 
 #signuptext {
