@@ -16,37 +16,30 @@ body {
   margin: 0px;
 }
 
-/* div.form_container >*{
-  margin: 8px 4px; 
+.form_container:not(:only-child){
+  text-align: center;
 }
-*/
+
+.form_container *:not(:only-child,#see_pass,.see_pass_container,.btm_container){
+  margin: 4px 2px 6px 2px;
+}
 
 ::placeholder {
   font-family: "Rubik", sans-serif;
 }
-
-/* .center{
-  text-align: center;
-} */
 
 .form_container {
   background-color: var(--primary-color);
   border-radius: 10px;
   padding: 30px 20px;
   width: 80%;
+  max-width: 420px;
+  min-width: 270px;
   height: auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-/* .float_left *:not(#check){
-
-} */
-
-form{
-  text-align: center;
 }
 
 .textbox {
@@ -56,6 +49,7 @@ form{
   border-radius: 4px;
   width: 95%;
   height: 35px;
+  /* padding: 0%; */
 }
 
 .see_pass_container{
@@ -66,7 +60,7 @@ form{
 #see_pass{
   position: absolute;
   right: 3%;
-  top: 57%;
+  top: 40%;
 }
 
 /* #check {
@@ -87,6 +81,11 @@ form{
   color: #a9abaf;
 }
 
+.btm_container{
+  width: 100%;
+  text-align:center;
+}
+
 .signinbtn {
   background-color: var(--button-color);
   color: var(--primary-color);
@@ -94,7 +93,7 @@ form{
   height: 33px;
   width: 95%;
   border-radius: 4px;
-  /* margin-top: 50px; */
+  padding: 0%;
 }
 
 #signuptext {
