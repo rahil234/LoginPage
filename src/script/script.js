@@ -1,25 +1,40 @@
-let email_ph = document.getElementById("email_box").placeholder;
-let pass_ph = document.getElementById("pass_box").placeholder;
+const email_ph = document.querySelector("#email_box").placeholder;
+const pass_ph = document.querySelector("#pass_box").placeholder;
+document
+  .querySelector("#email_box")
+  .addEventListener(
+    "focus",
+    () => (document.querySelector("#email_box").placeholder = "")
+  );
+document
+  .querySelector("#pass_box")
+  .addEventListener(
+    "focus",
+    () => (document.querySelector("#pass_box").placeholder = "")
+  );
+document
+  .querySelector("#email_box")
+  .addEventListener(
+    "focusout",
+    () => (document.querySelector("#email_box").placeholder = email_ph)
+  );
+document
+  .querySelector("#pass_box")
+  .addEventListener(
+    "focusout",
+    () => (document.querySelector("#pass_box").placeholder = pass_ph)
+  );
 
-function changeIcon(icon) {
-  icon.classList.toggle("bi-eye");
-  if (document.getElementById("pass_box").type == "text") {
-    document.getElementById("pass_box").type = "password";
+document.querySelector("#see_pass").addEventListener("click", () => {
+  if (
+    document.querySelector("#see_pass").getAttribute("class") == "bi-eye-slash"
+  ) {
+    document.querySelector("#see_pass").setAttribute("class", "bi-eye-fill");
+    document.querySelector("#pass_box").setAttribute("type", "text");
+    document.querySelector("#pass_box").focus();
   } else {
-    document.getElementById("pass_box").type = "text";
+    document.querySelector("#see_pass").setAttribute("class", "bi-eye-slash");
+    document.querySelector("#pass_box").setAttribute("type", "password");
+    document.querySelector("#pass_box").focus();
   }
-}
-
-function textFocus(element) {
-  element.placeholder = "";
-}
-
-function textOutFocus(element) {
-  if (element.value == "") {
-    if (element.type == "text") {
-      element.placeholder = email_ph;
-    } else if (element.type == "password") {
-      element.placeholder = pass_ph;
-    }
-  }
-}
+});
