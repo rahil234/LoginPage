@@ -19,7 +19,7 @@ body {
   margin: 0px;
 }
 
-.form_container span{
+.form_container span {
   margin-left: 3%;
 }
 
@@ -68,6 +68,7 @@ form div,
 }
 
 #see_pass {
+  visibility: hidden;
   position: absolute;
   right: 5%;
   top: 40%;
@@ -87,7 +88,7 @@ form div,
 } */
 
 #forgettext {
-  float:right;
+  float: right;
   color: #a9abaf;
   margin-right: 2%;
 }
