@@ -27,13 +27,13 @@ document
 
 document.querySelector("#see_pass").addEventListener("click", () => {
   if (
-    document.querySelector("#see_pass").getAttribute("class") == "bi-eye-slash"
+    document.querySelector("#see_pass").getAttribute("class") == "bi bi-eye-slash"
   ) {
-    document.querySelector("#see_pass").setAttribute("class", "bi-eye-fill");
+    document.querySelector("#see_pass").setAttribute("class", " bi bi-eye-fill");
     document.querySelector("#pass_box").setAttribute("type", "text");
     document.querySelector("#pass_box").focus();
   } else {
-    document.querySelector("#see_pass").setAttribute("class", "bi-eye-slash");
+    document.querySelector("#see_pass").setAttribute("class", "bi bi-eye-slash");
     document.querySelector("#pass_box").setAttribute("type", "password");
     document.querySelector("#pass_box").focus();
   }
