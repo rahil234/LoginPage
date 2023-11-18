@@ -4,7 +4,6 @@ const pass_ph = document.querySelector("#pass_box").placeholder;
 let holdstart = () => {
   document.querySelector("#see_pass").setAttribute("class", "bi bi-eye-fill");
   document.querySelector("#pass_box").setAttribute("type", "text");
-  document.querySelector("#pass_box").focus();
 };
 
 let holdend = () => {
@@ -23,12 +22,8 @@ let see_pass_check = () => {
   else if (document.querySelector("#pass_box").value === "") document.querySelector("#see_pass").style.visibility = "hidden"
 }
 
-document.querySelector("#pass_box").addEventListener("keypress", () => {
-  setTimeout(see_pass_check, 1);
-});
-
 document.querySelector("#pass_box").addEventListener("keydown", () => {
-  setTimeout(see_pass_check, 1);
+  setTimeout(see_pass_check, 30);
 });
 
 document
