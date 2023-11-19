@@ -2,12 +2,12 @@ const email_ph = document.querySelector("#email_box").placeholder;
 const pass_ph = document.querySelector("#pass_box").placeholder;
 
 let holdstart = () => {
-  document.querySelector("#see_pass").setAttribute("class", "bi bi-eye-fill");
+  document.querySelector("#see_pass").setAttribute("src", "src/img/eye-fill.svg");
   document.querySelector("#pass_box").setAttribute("type", "text");
 };
 
 let holdend = () => {
-  document.querySelector("#see_pass").setAttribute("class", " bi bi-eye-slash");
+  document.querySelector("#see_pass").setAttribute("src", "src/img/eye-slash.svg");
   document.querySelector("#pass_box").setAttribute("type", "password");
   document.querySelector("#pass_box").focus();
 };

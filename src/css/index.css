@@ -69,6 +69,7 @@ form div,
 
 #see_pass {
   visibility: hidden;
+  -webkit-user-drag: none;
   position: absolute;
   right: 5%;
   top: 35%;
