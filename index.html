@@ -22,15 +22,19 @@
                 <input class="textbox" id="email_box" type="text" name="email" placeholder=" email@gmail.com" /><br />
             </div>
             <span><label for="pass_box">Password</label></span><br />
-            <div class="see_pass_container">
+            <div>
                 <input class="textbox" id="pass_box" type="password" name="pass" placeholder=" . . . . . . . ." /><br />
                 <img id="see_pass" src="src/img/eye-slash.svg" alt="show pass">
             </div>
-            <span><label>
-                    <input type="checkbox" id="check" />
-                    Remember me
-                </label></span>
-            <a id="forgettext" href="#forgetpasword?">Forget password?</a>
+            <div class="rem_container_parent">
+                <div class="rem_container_child">
+                    <div>
+                        <img id="check" src="src/img/check-square.svg" alt="checkbox">
+                        <label for="check" id="rem_text">Remember me</label>
+                    </div>
+                    <a id="forgettext" href="#forgetpasword?">Forget password?</a>
+                </div>
+            </div>
             <div class="btm_container">
                 <button class="signinbtn">Sign In</button><br />
                 <label for="signuptext">Don't have an account yet?</label>
@@ -39,4 +43,5 @@
         </form>
     </div>
 </body>
+
 </html>

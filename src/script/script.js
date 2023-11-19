@@ -41,3 +41,8 @@ document.querySelector("#pass_box").addEventListener("focusout", () => {
       .setAttribute("class", " bi bi-eye-slash");
   }
 });
+document.querySelector("#check").addEventListener("click", () => {
+  if (document.querySelector("#check").getAttribute("src") === "src/img/check-square.svg")
+    document.querySelector("#check").setAttribute("src", "src/img/check-square-fill.svg")
+  else  document.querySelector("#check").setAttribute("src", "src/img/check-square.svg")
+});

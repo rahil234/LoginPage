@@ -10,34 +10,14 @@
 
 * {
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: var(--backgorund-color);
   font-family: "Rubik", sans-serif;
   font-size: small;
-  margin: 0px;
-}
-
-.form_container span {
-  margin-left: 3%;
-}
-
-form > * {
-  margin: 4px 2px 6px 2px;
-}
-
-form div,
-.btm_container {
-  text-align: center;
-}
-
-.btm_container > * {
-  margin: 10px 2px;
-}
-
-::placeholder {
-  font-family: "Rubik", sans-serif;
 }
 
 .form_container {
@@ -54,6 +34,20 @@ form div,
   transform: translate(-50%, -50%);
 }
 
+form > span {
+  margin-left: 3%;
+}
+
+form > div {
+  /* width: 100%; */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+::placeholder {
+  font-family: "Rubik", sans-serif;
+}
+
 .textbox {
   border-width: 2px;
   border-style: solid;
@@ -67,6 +61,20 @@ form div,
   position: relative;
 }
 
+.rem_container_parent {
+  display: flex;
+  justify-content: center;
+}
+.rem_container_child {
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btm_container > * {
+  margin-bottom: 10px;
+}
+
 #see_pass {
   visibility: hidden;
   -webkit-user-drag: none;
@@ -75,28 +83,13 @@ form div,
   top: 35%;
 }
 
-/* #check {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border-radius: 25%;
+#check {
   vertical-align: middle;
-  border: 2px solid #ddd;
-  appearance: inherit;
-} */
-
-/* #check:checked {
-} */
-
-#forgettext {
-  float: right;
-  color: #a9abaf;
-  margin-right: 2%;
 }
-
-.btm_container {
-  width: 100%;
-  margin: 4px 0px;
+#forgettext {
+  /* float: right; */
+  color: #a9abaf;
+  /* margin-right: 2%; */
 }
 
 .signinbtn {
