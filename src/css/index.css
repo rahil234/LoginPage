@@ -82,14 +82,13 @@ form > div {
   right: 5%;
   top: 35%;
 }
-
 #check {
   vertical-align: middle;
+  padding: 3px 0px;
 }
 #forgettext {
-  /* float: right; */
   color: #a9abaf;
-  /* margin-right: 2%; */
+  padding: 2px;
 }
 
 .signinbtn {
