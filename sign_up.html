@@ -17,31 +17,28 @@
 <body>
     <div class="form_container">
         <form method="get" action="logged_in.html">
+            <span><label for="email_box">Name</label></span><br />
+            <div>
+                <input class="textbox" id="name" type="text" name="name" placeholder=" John Doe" /><br />
+            </div>
             <span><label for="email_box">E-mail Address</label></span><br />
             <div>
-                <input class="textbox" id="email_box" type="text" name="email" placeholder=" email@gmail.com" /><br />
+                <input class="textbox" id="email_box" type="text" name="email" placeholder=" johndoe@gmail.com" /><br />
             </div>
             <span><label for="pass_box">Password</label></span><br />
             <div>
                 <input class="textbox" id="pass_box" type="password" name="pass" placeholder=" . . . . . . . ." /><br />
-                <img id="see_pass" src="src/img/eye-slash.svg" alt="show pass">
             </div>
-            <div class="rem_container_parent">
-                <div class="rem_container_child">
-                    <div>
-                        <img id="check" src="src/img/check-square.svg" alt="checkbox">
-                        <label for="check" id="rem_text">Remember me</label>
-                    </div>
-                    <a id="forgettext" href="forget_password.html">Forget password?</a>
-                </div>
+            <span><label for="pass_box">Confirm Password</label></span><br />
+            <div>
+                <input class="textbox" id="pass_box" type="password" name="pass" placeholder=" . . . . . . . ." /><br />
             </div>
             <div class="btm_container">
-                <button class="signinbtn">Sign In</button><br />
-                <label for="signuptext">Don't have an account yet?</label>
-                <a id="signuptext" href="sign_up.html">Sign Up</a>
+                <button class="signinbtn">Sign Up</button><br />
+                <label for="signuptext">Already have an account?</label>
+                <a id="signuptext" href="index.html">Sign In</a>
             </div>
         </form>
     </div>
 </body>
-
 </html>
