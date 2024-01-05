@@ -10,32 +10,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Rubik:wght@450&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="src/css/bootstrap-icons.css" />
     <script src="src/script/script.js" defer></script>
 </head>
-
+ 
 <body>
     <div class="form_container">
-        <form method="get" action="logged_in.html">
-            <span><label for="email_box">Name</label></span><br />
+        <form method="post" action="logged_in.html">
+            <span><label for="name">Name</label></span><br />
             <div>
-                <input class="textbox" id="name" type="text" name="name" placeholder=" John Doe" /><br />
+                <input class="textbox" id="name" type="text" name="name" autocomplete="name" placeholder=" John Doe" /><br />
             </div>
             <span><label for="email_box">E-mail Address</label></span><br />
             <div>
-                <input class="textbox" id="email_box" type="text" name="email" placeholder=" johndoe@gmail.com" /><br />
+                <input class="textbox" id="email_box" type="text" name="email" autocomplete="email" placeholder=" johndoe@gmail.com" /><br />
             </div>
             <span><label for="pass_box">Password</label></span><br />
             <div>
                 <input class="textbox" id="pass_box" type="password" name="pass" placeholder=" . . . . . . . ." /><br />
             </div>
-            <span><label for="pass_box">Confirm Password</label></span><br />
+            <span><label for="cpass_box">Confirm Password</label></span><br />
             <div>
-                <input class="textbox" id="pass_box" type="password" name="pass" placeholder=" . . . . . . . ." /><br />
+                <input class="textbox" id="cpass_box" type="password" name="Cpass" placeholder=" . . . . . . . ." /><br />
             </div>
             <div class="btm_container">
-                <button class="signinbtn">Sign Up</button><br />
-                <label for="signuptext">Already have an account?</label>
+                <button class="signinbtn">Sign Up</button><br />Already have an account?
                 <a id="signuptext" href="index.html">Sign In</a>
             </div>
         </form>

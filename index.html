@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Rubik:wght@450&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="src/css/bootstrap-icons.css" />
-    <script src="src/script/script.js" defer></script>
+    <script src="src/script/script_ux.js" defer></script>
+    <script src="src/script/script_db.js" defer></script>
 </head>
 
 <body>
@@ -19,25 +19,27 @@
         <form method="get" action="logged_in.html">
             <span><label for="email_box">E-mail Address</label></span><br />
             <div>
-                <input class="textbox" id="email_box" type="text" name="email" placeholder=" email@gmail.com" /><br />
+                <input class="textbox" id="email_box" type="text" name="email" autocomplete="email"
+                    placeholder=" email@gmail.com" /><br />
             </div>
             <span><label for="pass_box">Password</label></span><br />
             <div>
-                <input class="textbox" id="pass_box" type="password" name="pass" placeholder=" . . . . . . . ." /><br />
-                <img id="see_pass" src="src/img/eye-slash.svg" alt="show pass">
+                <div style="position: relative;">
+                    <input class="textbox" id="pass_box" type="password" name="pass" autocomplete="current-password"
+                        placeholder=" . . . . . . . ." /><br />
+                    <img id="see_pass" src="src/img/eye-slash.svg" alt="show pass">
+                </div>
             </div>
             <div class="rem_container_parent">
                 <div class="rem_container_child">
                     <div>
-                        <img id="check" src="src/img/check-square.svg" alt="checkbox">
-                        <label for="check" id="rem_text">Remember me</label>
+                        <img id="check" src="src/img/check-square.svg" alt="checkbox">Remember me
                     </div>
                     <a id="forgettext" href="forget_password.html">Forget password?</a>
                 </div>
             </div>
             <div class="btm_container">
-                <button class="signinbtn">Sign In</button><br />
-                <label for="signuptext">Don't have an account yet?</label>
+                <button class="signinbtn">Sign In</button><br />Don't have an account yet?
                 <a id="signuptext" href="sign_up.html">Sign Up</a>
             </div>
         </form>
